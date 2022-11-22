@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="keywords" content="HTML, CSS, JavaScript, CV, Mikko, Saarimaa">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Advent Pro' rel='stylesheet'>
+<script src="https://kit.fontawesome.com/aa5e2c09c9.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="styles/style.css">
+<title>Test site</title>
+</head>
+<body>
+
+<div class="navbar">
+    <div class="navbar-container">
+        <span onclick="toggleNav()">&#9776; Menu</span>
+        <div id="topMenu" style="padding-top: 0px; height: 0px;"> 
+            <!-- padding & height are here because if they were in css file, the menu would require two clicks to open -->
+            <p id="closebtn" onclick="closeNav()">&times;</p>
+            <a href="#first">First</a>
+            <a href="#second">Second</a>
+            <a href="#third">Third</a>
+            <a href="#fourth">Fourth</a>
+        </div>
+        <ul>
+            <li><a class="active" href="">Page 1</a></li>
+            <li><a href="">Page 2</a></li>
+            <li><a href="">Page 3</a></li>
+            <li><a href="">Page 4</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="bar">
+    <div class="bar-content">
+    <a id="profile_picture" target="_blank" href="https://www.linkedin.com/in/mikko-saarimaa-8a2694128/">
+        <img alt="Image failed to load." src="https://media-exp1.licdn.com/dms/image/C5603AQEQayDaxdOLzg/profile-displayphoto-shrink_200_200/0/1626373102518?e=1674691200&v=beta&t=ZpyE37pFFo6zTwL1aEJouxzKEO4W9Et_W1xVdRf6sDk">
+    </a>
+
+    <h1>Mikko Saarimaa</h1>
+    <hr style="width: 400px; height: 2px; border: none; margin-right: 500px; background-image: linear-gradient(to right, black , rgba(0,0,0,0));">
+    <p>Web developer looking for a job. Experience in HTML, CSS, JS and WordPress. Always learning more.</p>
+    <a class="some_icon link" target="_blank" href="https://www.linkedin.com/in/mikko-saarimaa-8a2694128/">
+        <img alt="Image failed to load." src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/800px-LinkedIn_logo_initials.png">
+    </a>
+
+    <a class="link linkedin-link" href="https://www.linkedin.com/in/mikko-saarimaa-8a2694128/" target="_blank"><sup>LinkedIn profile</sup></a>
+    </div>
+</div>
+
+<div class="container-top">
+    <div class="container-top-box">
+        <h2>First title</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet.</p>
+    </div>
+    <div class="container-top-box">
+        <h2>Second title</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet.</p>
+    </div>
+    <div class="container-top-box">
+        <h2>Third title</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet.</p>
+    </div>
+</div>
+
+<div class="container-fullwide">
+    <div class="container-centered">
+        <div class="container-grid">
+            <div class="leftbox">
+                <i class="fa fa-cloud"></i>
+                <h2>First title</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <div class="button-container">
+                    <button class="button-link">Button 1</button>
+                </div>
+            </div>
+            <div class="rightbox">
+                <i class="far fa-clock"></i>
+                <h2>Second title</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <div class="button-container">
+                    <button class="button-link">Button 2</button>
+                </div>
+            </div>
+            <div class="bottombox">
+                <i class="fa fa-file"></i>
+                <h2>Third title</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <div class="button-container">
+                    <button class="button-link">Button 3</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-content">
+        <p>Author: Firstname Lastname</p>
+        <hr class="hr-footer">
+        <br>
+        <a href="mailto:placeholder@email.com">placeholder@email.com</a></p>
+    </div>
+</footer>
+
+<!-- Button takes to top of page -->
+<button id="scrollToTopBtn" onclick="scrollToTop()">^</button>
+
+</body>
+
+<!-- Load external JS file when page is loaded -->
+<script type="text/javascript" src="js/scripts.js"></script>
+
+</html>

@@ -1,0 +1,404 @@
+body {
+    font-family: 'Montserrat', 'Verdana', sans-serif;
+    margin: 0;
+}
+
+p {
+    margin: 0;
+    padding: 10px 0;
+    font-size: 20px;
+    color: white;
+}
+
+a {
+    color: #0094e2;
+    text-decoration: none;
+}
+
+a, button, span {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* ----------- top navigation bar: -------------- */
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    border-bottom: 5px solid #0094e2;
+}
+
+.navbar-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+ul {
+    float: right;
+    margin: 0;
+    list-style-type: none;
+}
+  
+li {
+    float: left;
+}
+  
+li a {
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: .5s;
+    border-radius: 2rem 0 0 0;
+
+}
+  
+li a:hover:not(.active) {
+    background-color: #111;
+}
+  
+.active {
+    background-color: #0094e2;
+}
+
+/* ------- navbar Menu button ------- */
+
+.navbar span {
+    padding: 12px 16px;
+    float: left;
+    color: white;
+    transition: .5s;
+    border-radius: 2rem 0 0 0;
+}
+.navbar span:hover {
+    background-color: #111;
+}
+
+#topMenu {
+    display: block;
+    position: absolute;
+    width: 180px;
+    z-index: 1;
+    background-color: #333;
+    transition: 0.5s;
+    overflow: hidden;
+    margin-top: 52px;
+}
+  
+#topMenu a {
+    text-decoration: none;
+    padding: 8px 8px 8px 32px;
+    transition: .3s;
+    color: #818181;
+    display: block;
+}
+  
+#topMenu a:hover {
+    color: #f1f1f1;
+}
+  
+#closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+#closebtn:hover {
+    cursor:pointer;
+}
+  
+@media screen and (max-height: 450px) {
+    #topMenu {padding-top: 15px;}
+    #topMenu a {font-size: 18px;}
+}
+
+/*--- dropdown menu alignment ---*/
+/*
+.dropdown-align {
+}
+*/
+
+/*---------- icons: ---------*/
+
+.fa-cloud, .fa-clock, .fa-file {
+    font-size: 50px;
+    display: inline-block;
+    color: #0094e2;
+    padding: 20px 20px 0 0;
+}
+
+/*--------profile pic, introduction etc. at top:----------*/
+.bar {
+    background-color: rgba(220, 220, 220, 0.6);
+    background-image: url("https://www.ppt-backgrounds.net/thumbs/light-grey-curves-graphic-templates.jpeg");
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bar p {
+    color: black;
+}
+
+.bar-content {
+    max-width: 800px;
+    margin: auto;
+    padding: 50px 0;
+}
+
+#profile_picture img {
+    float: left;
+    width: 180px;
+    height: 180px;
+    margin: 20px 20px 0 0;
+    box-shadow: 0 0 5px #999;
+    border-radius: 50%;
+}
+
+h1 {
+    padding: 30px 0 0 0;
+    margin: 0;
+    color: black;
+}
+
+a.some_icon, .some_icon img {
+    height: 32px;
+    transition: filter .5s linear;
+}
+
+.some_icon img:hover {
+    filter: brightness(1.2);
+}
+
+.linkedin-link {
+    margin-left: 7px;
+    color: #0077b7;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: color .5s linear;
+}
+.linkedin-link:hover {
+    color:  #00a9ff;
+}
+
+/*-------- three text boxes with images: --------*/
+.container-top {
+    display: grid;
+}
+@media only screen and (min-width: 1553px) {.container-top {grid-template-columns: 1fr 1fr 1fr;}}
+@media only screen and (max-width: 1552px) {.container-top {grid-template-columns: auto;}}
+
+.container-top-box {
+    background-size: cover;
+    background-position: center;
+    background-color: grey;
+    padding: 220px 0 0 0px;
+    transition: padding .5s linear;
+    box-shadow: inset 0px -200px 400px rgba(0,0,0,.8);
+}
+
+/* on hover top padding is reduced, so text goes up */
+
+@media only screen and (min-width: 1553px) {
+    .container-top-box:nth-child(1):hover {
+        padding: 80px 0 0 0;
+    }
+    .container-top-box:nth-child(2):hover {
+        padding: 80px 0 0 0;
+    }
+    .container-top-box:nth-child(3):hover {
+        padding: 80px 0 0 0;
+    }
+}
+
+/* ------------------------------------------------ */
+
+.container-top-box h2 {
+    color: white;
+    margin: auto;
+    width: 200px;
+    text-align: center;
+    text-shadow: 2px 2px black;
+    line-height: 70px;
+}
+
+.container-top-box p {
+    text-align: justify;
+    padding: 45px;
+    margin: 0;
+}
+
+.container-top-box:nth-child(1) {
+    background-image: url("https://images.unsplash.com/photo-1546795729-f3a5d42087f5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80");
+    opacity: 0.8;
+}
+.container-top-box:nth-child(2) {
+    background-image: url("https://images.unsplash.com/photo-1540841612074-7beabf7dc726?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2089&q=80");
+    opacity: 0.8;
+}
+.container-top-box:nth-child(3) {
+    background-image: url("https://images.unsplash.com/photo-1457305237443-44c3d5a30b89?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1653&q=80");
+    opacity: 0.8;
+}
+
+/*----- three grey boxes and background: -----*/
+
+.container-fullwide {
+    background-image: url("https://www.ppt-backgrounds.net/thumbs/light-grey-curves-graphic-templates.jpeg");
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    margin: 0;
+}
+@media only screen and (min-width: 1552px) {
+    .container-fullwide {
+        padding: 50px 0;
+    }
+}
+
+.container-centered {
+    margin: auto;
+    max-width: 1200px;
+}
+
+.container-grid {
+    display: grid;
+}
+@media only screen and (min-width: 1552px) {
+    .container-grid {
+        grid-template-columns: auto auto;
+    }
+    .bottombox {
+        grid-column-start: 1; grid-column-end: 3;
+    }
+}
+@media only screen and (max-width: 1552px) {
+    .container-grid {
+        grid-template-columns: auto;
+    }
+}
+
+.leftbox {
+    background-color: rgba(41, 42, 48, 0.8);
+}
+.rightbox {
+    background-color: rgba(64, 64, 73, 0.8);
+}
+.bottombox {
+    background-color: rgba(25, 27, 31, 0.8);
+}
+.leftbox, .bottombox, .rightbox {
+    padding: 45px;
+}
+@media only screen and (min-width: 1552px) {
+    .leftbox, .bottombox, .rightbox {
+        min-height: 350px;
+    }
+}
+
+.leftbox h2, .rightbox h2, .bottombox h2 {
+    display: inline;
+    color: white;
+}
+
+.leftbox p, .rightbox p, .bottombox p {
+    padding: 25px 0 25px 22px;
+    color: white;
+}
+
+/* ---------footer and content: ---------*/
+footer {
+    border-top: 5px solid #0094e2;
+    width: 100%;
+    background-color: #333;
+    min-height: 300px;
+}
+.footer-content {
+    padding-top: 90px;
+    text-align: center;
+    max-width: 500px;
+    margin: auto;
+}
+.hr-footer {
+    width: 100%;
+    height: 2px;
+    border: none;
+    background-image: linear-gradient(to right, rgba(0,0,0,0), white , rgba(0,0,0,0));
+}
+
+/* button takes to top of page, rest of code in .JS file */
+
+#scrollToTopBtn {
+    font-size: 80px;
+    border: none;
+    font-family: 'Advent Pro';
+    position: fixed;
+    right: 50px;
+    bottom: 0px;
+    opacity: 0;
+    border-radius: 50%;
+    box-shadow: 0 4px 4px rgba(0,0,0,.2);
+    transition: .5s linear;
+    width: 45px;
+    padding: 10px 3px 0 0;
+    height: 48px;
+    color: rgb(100,100,100);
+}
+
+/* ------buttons for boxes ------*/
+.button-link {
+    background-color: transparent;
+    color: white;
+    border: 2px solid #0094e2;
+    border-radius: 12px;
+    padding: 20px;
+    display: grid;
+    margin: auto;
+    transition: .5s;
+}
+.button-link:hover {
+    background-color:rgb(49, 49, 56);
+    box-shadow: 0 0 12px #0094e2;
+}
+
+/* media queries for small screens: */
+
+@media only screen and (max-width: 800px) {
+
+    .bar-content {
+        max-width: 600px;
+        padding: 30px;
+    }
+
+    #profile_picture img {
+        width: 100px;
+        height: 100px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    a.some_icon, .some_icon img {
+        float: right;
+        height: 25px;
+    }
+
+    .linkedin-link {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 579px) {
+    hr {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 455px) {
+    #profile_picture img {
+        margin-bottom: 50px;
+    }
+}
